@@ -1,0 +1,1218 @@
+<!-- ============================================================
+  НАСТРОЙКИ — меняй здесь, остальное подхватится автоматически
+============================================================ -->
+<!-- ИП_ФИО: -------------------------------------------------- -->
+<!-- ИНН: ----------------------------------------------------- -->
+<!-- БОТ: PulseComputersBot -->
+<!-- МЕНЕДЖЕР: pulse_gadgets1 -->
+<!-- КАНАЛ: pulse_computers -->
+<!-- ГОД_ОСНОВАНИЯ: 2019 -->
+<!-- ГОРОД: Краснодар -->
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050507">
+<title>Pulse Computers — сборка, ремонт и кастомизация ПК в Краснодаре</title>
+<meta name="description" content="Pulse Computers — инженерная мастерская: сборка ПК под ключ, ремонт ноутбуков, апгрейд, обслуживание, моддинг. Краснодар. С 2019 года.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://qsvztyhszwauwkxfmirs.supabase.co" crossorigin>
+<link rel="dns-prefetch" href="https://qsvztyhszwauwkxfmirs.supabase.co">
+<script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+<style>
+:root{
+  --bg:#050507;
+  --surface:#0C0C0F;
+  --surface2:#121215;
+  --surface3:#18181B;
+  --surface4:#1F1F23;
+  --border:rgba(255,255,255,0.06);
+  --border2:rgba(255,255,255,0.10);
+  --border3:rgba(255,255,255,0.16);
+  --w95:rgba(255,255,255,0.96);
+  --w80:rgba(255,255,255,0.80);
+  --w60:rgba(255,255,255,0.58);
+  --w50:rgba(255,255,255,0.46);
+  --w40:rgba(255,255,255,0.36);
+  --accent:#C62828;
+  --accent-soft:#E53935;
+  --accent-muted:#B71C1C;
+  --accent-glow:rgba(198,40,40,0.14);
+  --accent-border:rgba(198,40,40,0.28);
+  --accent-shadow:rgba(198,40,40,0.45);
+  --r:12px; --r2:16px; --r3:20px; --r4:26px; --r-pill:100px;
+  --display:'Unbounded',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --body:'Space Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono','SF Mono','Fira Code',monospace;
+  --shadow-md:0 4px 20px rgba(0,0,0,0.6);
+  --shadow-lg:0 8px 40px rgba(0,0,0,0.7);
+  --shadow-accent:0 4px 20px rgba(198,40,40,0.25);
+  --shadow-accent-lg:0 10px 50px rgba(198,40,40,0.32);
+  --supabase:https://qsvztyhszwauwkxfmirs.supabase.co/storage/v1/object/public/portfolio;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{max-width:100vw;overflow-x:hidden}
+body{
+  font-family:var(--body);
+  background:var(--bg);
+  color:var(--w80);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:clip;
+  font-size:16px;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3,h4{font-family:var(--display);color:var(--w95);font-weight:700;letter-spacing:-0.025em;line-height:1.08;text-wrap:balance;overflow-wrap:break-word;hyphens:auto}
+*{min-width:0}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+section{padding:clamp(64px,9vw,128px) 0;border-top:1px solid var(--border);position:relative}
+section:first-of-type{border-top:0}
+
+/* Eyebrow */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:11px;font-weight:500;
+  text-transform:uppercase;letter-spacing:0.18em;
+  color:var(--w60);
+}
+.eyebrow::before{
+  content:"";width:6px;height:6px;border-radius:50%;
+  background:var(--accent);box-shadow:0 0 14px var(--accent);
+}
+.section-head{display:flex;flex-direction:column;gap:20px;max-width:820px;margin-bottom:clamp(40px,5vw,72px)}
+.section-head h2{font-size:clamp(32px,4.8vw,60px)}
+.section-head p{color:var(--w60);font-size:clamp(15px,1.3vw,18px);max-width:660px;font-family:var(--body);letter-spacing:-0.005em}
+
+/* Header */
+.header{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:saturate(180%) blur(18px);
+  -webkit-backdrop-filter:saturate(180%) blur(18px);
+  background:rgba(5,5,7,0.78);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{
+  max-width:1280px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 24px;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:10px;color:var(--w95);font-family:var(--display);font-weight:700;letter-spacing:-0.02em;font-size:15px}
+.brand img{width:32px;height:32px;border-radius:8px;flex-shrink:0}
+.nav-links{display:flex;gap:24px}
+.nav-links a{color:var(--w60);font-size:13.5px;font-weight:500;transition:color .2s;font-family:var(--body)}
+.nav-links a:hover{color:var(--w95)}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:9px 16px;border-radius:var(--r-pill);
+  font-family:var(--body);font-weight:600;font-size:13px;letter-spacing:-0.005em;
+  transition:transform .15s,box-shadow .2s,background .2s;
+  white-space:nowrap;
+}
+.btn-primary{
+  background:var(--accent);color:#fff;
+  box-shadow:var(--shadow-accent);
+}
+.btn-primary:hover{background:var(--accent-soft);box-shadow:var(--shadow-accent-lg);transform:translateY(-1px)}
+.btn-ghost{
+  color:var(--w95);background:var(--surface3);border:1px solid var(--border2);
+}
+.btn-ghost:hover{background:var(--surface4);border-color:var(--border3)}
+.btn-lg{padding:13px 24px;font-size:14px}
+.btn i{font-size:16px}
+.hide-mobile{display:flex}
+
+/* HERO */
+.hero{padding-top:clamp(48px,7vw,96px);padding-bottom:clamp(64px,8vw,112px)}
+.hero-grid{
+  display:grid;grid-template-columns:1fr auto;
+  gap:clamp(40px,6vw,80px);align-items:center;
+}
+.hero h1{
+  font-size:clamp(40px,6.4vw,88px);
+  line-height:0.98;letter-spacing:-0.035em;
+  margin-top:24px;
+}
+.hero h1 .accent{color:var(--accent-soft)}
+.hero h1 .strike{
+  background:linear-gradient(180deg,transparent 62%,var(--accent-glow) 62%,var(--accent-glow) 88%,transparent 88%);
+  padding:0 4px;
+}
+.hero-logo{
+  width:clamp(200px,28vw,360px);
+  aspect-ratio:1/1;
+  object-fit:contain;
+  border-radius:var(--r3);
+  filter:drop-shadow(0 0 40px rgba(198,40,40,0.18));
+}
+.hero-lead{
+  color:var(--w60);margin-top:28px;font-size:clamp(15px,1.4vw,19px);
+  max-width:540px;line-height:1.5;
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px}
+.hero-meta{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;margin-top:48px;background:var(--border);
+  border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;
+}
+.hero-meta-cell{background:var(--surface);padding:18px 20px}
+.hero-meta-cell .num{
+  font-family:var(--mono);font-weight:700;color:var(--w95);
+  font-size:24px;letter-spacing:-0.02em;
+}
+.hero-meta-cell .lab{
+  font-family:var(--mono);font-size:10px;color:var(--w40);
+  text-transform:uppercase;letter-spacing:0.14em;margin-top:6px;
+}
+
+/* LUCKY ROWS — full viewport edge-to-edge */
+.lucky-rows{
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  padding:16px 0;position:relative;overflow:hidden;
+  max-width:100vw;
+}
+.lucky-rows::before,.lucky-rows::after{
+  content:"";position:absolute;top:0;bottom:0;width:clamp(60px,8vw,140px);z-index:2;pointer-events:none;
+}
+.lucky-rows::before{left:0;background:linear-gradient(90deg,var(--bg),transparent)}
+.lucky-rows::after{right:0;background:linear-gradient(270deg,var(--bg),transparent)}
+.lucky-row{
+  display:flex;width:max-content;gap:8px;
+  padding:4px 0;will-change:transform;
+}
+.lucky-row.row-1{animation:slide-l 70s linear infinite}
+.lucky-row.row-2{animation:slide-r 98s linear infinite}
+.lucky-row.row-3{animation:slide-l 52s linear infinite}
+.lucky-row.row-4{animation:slide-r 115s linear infinite}
+.lucky-row.row-5{animation:slide-l 82s linear infinite}
+@keyframes slide-l{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes slide-r{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.lucky-row .cell{
+  flex-shrink:0;border-radius:8px;overflow:hidden;
+  background:var(--surface2);border:1px solid var(--border);
+  display:grid;place-items:center;
+}
+.lucky-row .cell img{
+  width:100%;height:100%;object-fit:contain;display:block;
+  transition:transform .35s;
+}
+.lucky-row .cell:hover img{transform:scale(1.06)}
+/* row-specific cell sizes */
+.lucky-row.row-1 .cell{width:180px;height:120px}
+.lucky-row.row-2 .cell{width:150px;height:100px}
+.lucky-row.row-3 .cell{width:200px;height:130px}
+.lucky-row.row-4 .cell{width:140px;height:94px}
+.lucky-row.row-5 .cell{width:220px;height:140px}
+
+/* Marquee tags */
+.tag-strip{
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  overflow:hidden;padding:20px 0;max-width:100vw;
+}
+.tag-strip-inner{
+  display:flex;gap:48px;width:max-content;
+  animation:marquee 40s linear infinite;
+}
+.tag-strip-inner span{
+  font-family:var(--mono);font-size:13px;color:var(--w40);
+  text-transform:uppercase;letter-spacing:0.16em;white-space:nowrap;
+  display:inline-flex;align-items:center;gap:48px;
+}
+.tag-strip-inner span::after{
+  content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);
+}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+.svc{
+  background:var(--surface);padding:28px;
+  display:flex;flex-direction:column;gap:12px;
+  transition:background .2s;position:relative;
+}
+.svc:hover{background:var(--surface2)}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.svc-title{font-family:var(--display);font-size:17px;color:var(--w95);font-weight:600;letter-spacing:-0.015em;line-height:1.25}
+.svc-desc{color:var(--w60);font-size:13.5px;line-height:1.5}
+.svc-price{
+  font-family:var(--mono);font-weight:700;color:#fff;
+  font-size:16px;white-space:nowrap;letter-spacing:-0.02em;line-height:1;
+  padding:9px 14px;border-radius:12px;
+  background:linear-gradient(180deg,var(--accent-soft),var(--accent-muted));
+  border:1px solid rgba(255,255,255,0.12);
+  box-shadow:var(--shadow-accent), inset 0 1px 0 rgba(255,255,255,0.18);
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:90px;text-align:center;flex-shrink:0;
+}
+.svc-price.sz-xl{font-size:18px;padding:10px 16px}
+.svc-price.sz-l{font-size:16px;padding:9px 14px}
+.svc-price.sz-m{font-size:14px;padding:8px 12px}
+.svc-price.sz-s{font-size:12px;padding:7px 10px}
+.svc:hover .svc-price{box-shadow:var(--shadow-accent-lg), inset 0 1px 0 rgba(255,255,255,0.22)}
+.svc-foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:6px}
+.svc-num{font-family:var(--mono);font-size:11px;color:var(--w40);letter-spacing:0.1em}
+.svc-foot a{
+  font-family:var(--body);font-size:12px;font-weight:500;color:var(--w60);
+  display:inline-flex;align-items:center;gap:5px;
+}
+.svc-foot a:hover{color:var(--accent-soft)}
+.svc-foot a i{font-size:13px}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+.step{background:var(--surface);padding:36px 28px;display:flex;flex-direction:column;gap:14px;min-height:240px}
+.step-n{font-family:var(--mono);font-size:13px;color:var(--accent-soft);font-weight:700;letter-spacing:0.1em}
+.step h3{font-family:var(--display);font-size:22px;color:var(--w95);font-weight:600;letter-spacing:-0.02em;line-height:1.2}
+.step p{color:var(--w60);font-size:14px;line-height:1.55}
+
+/* NUMBERS */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+.num-cell{background:var(--surface);padding:40px 28px}
+.num-cell .big{
+  font-family:var(--display);font-weight:700;color:var(--w95);
+  font-size:clamp(48px,5.5vw,72px);letter-spacing:-0.04em;line-height:0.95;
+}
+.num-cell .big .unit{color:var(--accent-soft);font-size:0.5em;vertical-align:top;margin-left:2px}
+.num-cell .lab{
+  font-family:var(--body);font-size:15px;color:var(--w60);
+  margin-top:14px;line-height:1.4;
+}
+
+/* PORTFOLIO */
+.filters{
+  display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px;
+}
+.filter{
+  font-family:var(--mono);font-size:11px;text-transform:uppercase;
+  letter-spacing:0.14em;padding:10px 16px;border-radius:var(--r-pill);
+  background:var(--surface2);border:1px solid var(--border);color:var(--w60);
+  cursor:pointer;transition:all .2s;
+}
+.filter:hover{color:var(--w95);border-color:var(--border2)}
+.filter.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:var(--shadow-accent)}
+.pf-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.pf{
+  background:var(--surface2);border:1px solid var(--border);border-radius:var(--r3);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .25s,border-color .2s;
+  position:relative;
+}
+.pf:hover{transform:translateY(-4px);border-color:var(--border2)}
+.pf-cover{aspect-ratio:4/3;background:var(--surface3);overflow:hidden;position:relative}
+.pf-cover img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.pf:hover .pf-cover img{transform:scale(1.04)}
+.pf-tag{
+  position:absolute;top:14px;left:14px;
+  font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.14em;
+  padding:6px 10px;border-radius:var(--r-pill);
+  background:rgba(5,5,7,0.72);backdrop-filter:blur(8px);color:var(--w95);
+  border:1px solid var(--border2);
+}
+.pf-tag.build{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pf-body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pf h3{font-family:var(--display);font-size:17px;color:var(--w95);font-weight:600;letter-spacing:-0.015em;line-height:1.25}
+.pf p{color:var(--w60);font-size:13.5px;line-height:1.5;flex:1}
+.pf-meta{
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:var(--mono);font-size:11px;color:var(--w40);
+  letter-spacing:0.08em;margin-top:6px;
+}
+.pf-meta a{color:var(--w60);display:inline-flex;align-items:center;gap:4px}
+.pf-meta a:hover{color:var(--accent-soft)}
+.show-more-wrap{text-align:center;margin-top:28px}
+.show-more-btn{
+  font-family:var(--body);font-size:13.5px;font-weight:600;color:var(--w80);
+  padding:12px 28px;border-radius:var(--r-pill);
+  background:var(--surface3);border:1px solid var(--border2);
+  transition:all .2s;cursor:pointer;
+}
+.show-more-btn:hover{background:var(--surface4);border-color:var(--border3);color:var(--w95)}
+.pf-hidden{display:none}
+
+/* BUILDS — «Также мы можем собрать» */
+.builds-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.build-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r3);
+  padding:28px;display:flex;flex-direction:column;gap:16px;
+  transition:border-color .2s,transform .2s;
+}
+.build-card:hover{border-color:var(--border2);transform:translateY(-2px)}
+.build-card .bc-icon{
+  width:48px;height:48px;border-radius:12px;
+  background:var(--accent-glow);border:1px solid var(--accent-border);
+  display:grid;place-items:center;color:var(--accent-soft);
+}
+.build-card .bc-icon i{font-size:22px}
+.build-card h3{font-family:var(--display);font-size:19px;color:var(--w95);font-weight:600;letter-spacing:-0.015em}
+.build-card p{color:var(--w60);font-size:13.5px;line-height:1.5;flex:1}
+.build-card .bc-price{
+  font-family:var(--mono);font-weight:700;color:var(--accent-soft);
+  font-size:15px;letter-spacing:-0.01em;
+}
+
+/* REVIEWS */
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rv-wrap-link{display:block;color:inherit;text-decoration:none}
+.rv{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r3);
+  padding:28px;display:flex;flex-direction:column;gap:16px;
+  transition:border-color .2s;position:relative;height:100%;
+}
+.rv-wrap-link:hover .rv{border-color:var(--border2)}
+.rv-quote-mark{
+  font-family:var(--display);font-size:48px;color:var(--accent);
+  line-height:0.5;letter-spacing:-0.05em;font-weight:700;
+}
+.rv-text{color:var(--w80);font-size:14.5px;line-height:1.6;flex:1}
+.rv-foot{display:flex;align-items:center;gap:14px;padding-top:14px;border-top:1px solid var(--border)}
+.rv-avatar{
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-muted));
+  display:grid;place-items:center;color:#fff;font-family:var(--display);
+  font-weight:700;font-size:15px;flex-shrink:0;letter-spacing:-0.01em;
+}
+.rv-name{font-family:var(--body);color:var(--w95);font-weight:600;font-size:14.5px;letter-spacing:-0.005em}
+.rv-where{font-family:var(--mono);font-size:11px;color:var(--w40);letter-spacing:0.08em;margin-top:2px}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.faq details{border-bottom:1px solid var(--border);padding:0}
+.faq details:last-of-type{border-bottom:0}
+.faq summary{
+  list-style:none;cursor:pointer;
+  padding:28px 0;display:flex;justify-content:space-between;align-items:center;gap:32px;
+  font-family:var(--display);font-size:clamp(17px,1.7vw,21px);color:var(--w95);
+  font-weight:600;letter-spacing:-0.015em;line-height:1.3;
+  transition:color .2s;
+}
+.faq summary:hover{color:var(--accent-soft)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"";width:24px;height:24px;flex-shrink:0;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round'><path d='M12 5v14M5 12h14'/></svg>") center/contain no-repeat;
+  transition:transform .25s;opacity:0.6;
+}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details[open] summary{color:var(--accent-soft)}
+.faq-body{padding:0 0 32px 0;color:var(--w60);font-size:15.5px;line-height:1.6;max-width:760px}
+
+/* CONTACTS */
+.contacts-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:stretch}
+.contacts-list{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden}
+.ct{background:var(--surface);padding:24px 28px;display:flex;align-items:center;gap:20px}
+.ct-ico{
+  width:44px;height:44px;border-radius:12px;
+  background:var(--surface3);border:1px solid var(--border2);
+  display:grid;place-items:center;color:var(--w95);flex-shrink:0;
+}
+.ct-ico i{font-size:20px}
+.ct-lab{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.14em;color:var(--w40)}
+.ct-val{font-family:var(--display);color:var(--w95);font-weight:600;font-size:17px;margin-top:4px;letter-spacing:-0.01em}
+.ct-val a:hover{color:var(--accent-soft)}
+.map-stub{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);
+  aspect-ratio:1/1;overflow:hidden;position:relative;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);
+  background-size:32px 32px;
+}
+.map-stub::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 40% 55%,var(--accent-glow) 0%,transparent 45%);
+}
+.map-pin{
+  position:absolute;left:40%;top:55%;transform:translate(-50%,-100%);
+  display:flex;flex-direction:column;align-items:center;gap:6px;z-index:2;
+}
+.map-pin .dot{
+  width:18px;height:18px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 4px rgba(198,40,40,0.25),0 0 30px var(--accent);
+}
+.map-pin .lab{
+  font-family:var(--mono);font-size:10px;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--w80);
+  background:rgba(5,5,7,0.8);backdrop-filter:blur(6px);
+  padding:6px 10px;border-radius:var(--r-pill);
+  border:1px solid var(--border2);
+}
+.map-note{
+  position:absolute;left:24px;bottom:24px;z-index:2;
+  font-family:var(--mono);font-size:11px;color:var(--w40);letter-spacing:0.1em;
+}
+
+/* CTA */
+.cta-block{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r4);
+  padding:clamp(48px,7vw,96px) clamp(32px,5vw,72px);
+  position:relative;overflow:hidden;text-align:center;
+}
+.cta-block::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 100%,var(--accent-glow) 0%,transparent 60%);
+  pointer-events:none;
+}
+.cta-block h2{font-size:clamp(32px,5vw,64px);letter-spacing:-0.035em;max-width:820px;margin:0 auto;line-height:1.02}
+.cta-block p{color:var(--w60);max-width:540px;margin:24px auto 0;font-size:clamp(15px,1.3vw,17px)}
+.cta-block .hero-cta{justify-content:center;margin-top:40px;position:relative;z-index:1}
+
+/* FOOTER */
+.footer{padding:40px 0 32px;border-top:1px solid var(--border)}
+.footer-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:flex-start}
+.footer-col{display:flex;flex-direction:column;gap:8px}
+.footer-col .brand{font-size:14px}
+.footer-meta{font-family:var(--mono);font-size:11px;color:var(--w40);letter-spacing:0.1em;text-transform:uppercase}
+.footer-legal{display:flex;flex-wrap:wrap;gap:14px 20px}
+.footer-legal a{font-family:var(--body);font-size:12.5px;color:var(--w60);border-bottom:1px solid transparent;transition:all .2s}
+.footer-legal a:hover{color:var(--w95);border-bottom-color:var(--w40)}
+.footer-ip{font-family:var(--mono);font-size:10.5px;color:var(--w40);letter-spacing:0.06em;margin-top:4px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{font-family:var(--mono);font-size:11px;color:var(--w60);letter-spacing:0.1em;text-transform:uppercase}
+.footer-links a:hover{color:var(--w95)}
+
+/* RESPONSIVE */
+@media (max-width:1366px){
+  .wrap{padding:0 22px}
+}
+@media (max-width:1180px){
+  .hero h1{font-size:clamp(38px,5.6vw,70px)}
+}
+@media (max-width:1100px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-logo{display:none}
+  .svc-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .nums{grid-template-columns:repeat(2,1fr)}
+  .pf-grid{grid-template-columns:repeat(2,1fr)}
+  .builds-grid{grid-template-columns:repeat(2,1fr)}
+  .rv-grid{grid-template-columns:repeat(2,1fr)}
+  .contacts-grid{grid-template-columns:1fr}
+  .map-stub{aspect-ratio:16/10}
+}
+@media (max-width:900px){
+  .lucky-row.row-1 .cell{width:144px!important;height:96px!important}
+  .lucky-row.row-3 .cell{width:160px!important;height:104px!important}
+  .lucky-row.row-5 .cell{width:176px!important;height:112px!important}
+  .lucky-row .cell{width:120px!important;height:80px!important}
+  .lucky-row.row-2 .cell{width:120px!important;height:80px!important}
+  .lucky-row.row-4 .cell{width:112px!important;height:76px!important}
+}
+@media (max-width:820px){
+  .pf-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  .nav-links{display:none}
+  .hide-mobile{display:none}
+  .header-inner{padding:10px 14px;gap:10px}
+  .header-inner .btn span{display:none}
+  .header-inner .btn{padding:8px 10px}
+  .wrap{padding:0 18px}
+  section{padding:56px 0}
+  .hero{padding-top:24px;padding-bottom:48px}
+  .hero h1{font-size:clamp(28px,8.4vw,44px);letter-spacing:-0.03em;line-height:1.04}
+  .hero-meta{grid-template-columns:1fr}
+  .hero-meta-cell{padding:14px 16px}
+  .hero-meta-cell .num{font-size:20px}
+  .builds-grid{grid-template-columns:1fr}
+  .pf-grid{grid-template-columns:1fr;gap:12px}
+  .rv-grid{grid-template-columns:1fr}
+  .svc{padding:22px}
+  .svc-title{font-size:16px}
+  .step{padding:26px 20px;min-height:auto}
+  .num-cell{padding:26px 20px}
+  .ct{padding:20px 22px}
+  .filters{overflow-x:auto;flex-wrap:nowrap;margin-left:-18px;margin-right:-18px;padding:4px 18px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .filters::-webkit-scrollbar{display:none}
+  .filter{flex-shrink:0}
+  .footer-inner{flex-direction:column;gap:18px}
+  .contacts-grid{gap:28px}
+  .map-stub{aspect-ratio:5/4}
+}
+@media (max-width:600px){
+  .steps{grid-template-columns:1fr}
+  .nums{grid-template-columns:repeat(2,1fr)}
+  .lucky-row .cell{width:96px!important;height:64px!important}
+  .lucky-row.row-1 .cell{width:108px!important;height:72px!important}
+  .lucky-row.row-3 .cell{width:120px!important;height:80px!important}
+  .lucky-row.row-5 .cell{width:132px!important;height:84px!important}
+}
+@media (max-width:430px){
+  .wrap{padding:0 14px}
+  .header-inner{padding:9px 14px}
+  .hero h1{font-size:30px;line-height:1.04;letter-spacing:-0.025em}
+  .hero-lead{font-size:14.5px;margin-top:22px}
+  .hero-cta{margin-top:28px}
+  .hero-meta{margin-top:32px}
+  .section-head h2{font-size:26px}
+  .section-head{margin-bottom:32px;gap:14px}
+  .brand{font-size:13px;gap:8px}
+  .brand img{width:26px;height:26px}
+  .lucky-row .cell{width:72px!important;height:48px!important}
+  .lucky-row.row-1 .cell{width:84px!important;height:56px!important}
+  .lucky-row.row-3 .cell{width:96px!important;height:64px!important}
+  .lucky-row.row-5 .cell{width:108px!important;height:68px!important}
+  .lucky-row{gap:5px}
+  .svc{padding:20px}
+  .svc-title{font-size:15px}
+  .svc-price{min-width:78px;padding:7px 11px}
+  .svc-price.sz-xl{font-size:15px}
+  .svc-price.sz-l{font-size:14px}
+  .svc-price.sz-m{font-size:12px}
+  .svc-price.sz-s{font-size:11px}
+  .pf-body{padding:18px}
+  .pf h3{font-size:16px}
+  .step{padding:24px 18px}
+  .num-cell{padding:24px 18px}
+  .num-cell .big{font-size:42px}
+  .ct{padding:18px 20px;gap:14px}
+  .ct-ico{width:38px;height:38px}
+  .ct-val{font-size:15.5px}
+  .footer{padding:32px 0 24px}
+  .footer-links{flex-wrap:wrap;gap:14px 18px}
+  .tag-strip-inner{gap:32px;font-size:11px}
+  .tag-strip-inner span{gap:32px}
+  .faq summary{padding:22px 0;gap:18px}
+  .faq summary::after{width:20px;height:20px}
+  .rv{padding:22px}
+  .rv-quote-mark{font-size:36px}
+  .rv-text{font-size:13.5px}
+  .build-card{padding:22px}
+  .header-inner .btn{padding:7px 10px;border-radius:16px}
+  .header-inner .btn i{font-size:14px}
+}
+@media (max-width:360px){
+  .wrap{padding:0 12px}
+  .hero h1{font-size:27px;line-height:1.06}
+  .section-head h2{font-size:22px}
+  .brand span:not(.brand){font-size:12px}
+  .num-cell .big{font-size:38px}
+  .hero-meta-cell .num{font-size:18px}
+  .hero-meta-cell .lab{font-size:9px}
+  .svc-foot{flex-direction:column;align-items:flex-start;gap:8px}
+}
+@media (max-width:320px){
+  .wrap{padding:0 10px}
+  .hero h1{font-size:24px;letter-spacing:-0.02em}
+  .hero-lead{font-size:13.5px}
+  .section-head h2{font-size:20px}
+  .brand{gap:6px;font-size:11px}
+  .brand img{width:22px;height:22px}
+  .header-inner{padding:8px 10px;gap:6px}
+}
+@media (max-height:520px) and (orientation:landscape){
+  .hero{padding-top:18px;padding-bottom:24px}
+  .hero h1{font-size:clamp(28px,5.4vw,40px)}
+  .hero-meta{margin-top:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  .lucky-row,.tag-strip-inner{animation:none}
+}
+.no-result{padding:64px 0;text-align:center;color:var(--w40);font-family:var(--mono);font-size:13px;letter-spacing:0.12em;text-transform:uppercase}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="brand">
+      <img src="mpx20tjx-image.png" alt="Pulse Computers" onerror="this.style.display='none'">
+      <span>Pulse Computers</span>
+    </a>
+    <nav class="nav-links hide-mobile" aria-label="Главная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#process">Процесс</a>
+      <a href="#portfolio">Работы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn-primary" href="https://t.me/PulseComputersBot" target="_blank" rel="noopener">
+      <i class="ph-bold ph-telegram-logo"></i><span>Оставить заявку</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" data-od-id="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Инженерная мастерская · Краснодар · с 2019</span>
+        <h1>
+          Собираем <span class="accent">ПК под ключ.</span><br>
+          Чиним то, что <span class="strike">«не подлежит ремонту»</span>.
+        </h1>
+        <p class="hero-lead">
+          Сборка, апгрейд, обслуживание, сложный компонентный ремонт. Работаем с десктопами, ноутбуками, видеокартами и Mac. 6 лет в деле — каждая работа с фотоотчётом и гарантией.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="https://t.me/PulseComputersBot" target="_blank" rel="noopener">
+            <i class="ph-bold ph-telegram-logo"></i><span>Написать в бот</span>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#portfolio">
+            <span>Смотреть работы</span><i class="ph-bold ph-arrow-down-right"></i>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-cell">
+            <div class="num">500+</div>
+            <div class="lab">Работ с 2019 года</div>
+          </div>
+          <div class="hero-meta-cell">
+            <div class="num">24/7</div>
+            <div class="lab">Заявки в Telegram</div>
+          </div>
+          <div class="hero-meta-cell">
+            <div class="num">14</div>
+            <div class="lab">Видов услуг</div>
+          </div>
+        </div>
+      </div>
+      <img class="hero-logo" src="mpx20tjx-image.png" alt="Pulse Computers" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- LUCKY ROWS — 5 marquees, full viewport edge-to-edge -->
+<div class="lucky-rows" data-od-id="lucky-rows" aria-hidden="true">
+  <div class="lucky-row row-1" id="lrow1"></div>
+  <div class="lucky-row row-2" id="lrow2"></div>
+  <div class="lucky-row row-3" id="lrow3"></div>
+  <div class="lucky-row row-4" id="lrow4"></div>
+  <div class="lucky-row row-5" id="lrow5"></div>
+</div>
+
+<!-- TAG STRIP -->
+<div class="tag-strip" data-od-id="tag-strip" aria-hidden="true">
+  <div class="tag-strip-inner">
+    <span>Сборка ПК</span><span>Апгрейд</span><span>Ремонт ноутбуков</span><span>Чистка</span><span>Замена термопасты</span><span>BGA-пайка</span><span>Установка Windows</span><span>Ремонт Mac</span><span>Восстановление BIOS</span><span>Моддинг</span><span>Лазерная гравировка</span><span>Винилография</span>
+    <span>Сборка ПК</span><span>Апгрейд</span><span>Ремонт ноутбуков</span><span>Чистка</span><span>Замена термопасты</span><span>BGA-пайка</span><span>Установка Windows</span><span>Ремонт Mac</span><span>Восстановление BIOS</span><span>Моддинг</span><span>Лазерная гравировка</span><span>Винилография</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" data-od-id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Услуги · Прайс</span>
+      <h2>14 направлений работ. Прозрачные цены.</h2>
+      <p>Ниже — текущий прайс из нашей рабочей базы. Финальная стоимость согласовывается после диагностики, без неприятных сюрпризов в чеке.</p>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" data-od-id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Как мы работаем</span>
+      <h2>Четыре шага от заявки до готового устройства.</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-n">01 / Заявка</div>
+        <h3>Telegram-бот</h3>
+        <p>Описываете задачу в боте: что собрать, что чинить, бюджет, сроки. Без звонков и анкет.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">02 / Диагностика</div>
+        <h3>Точная оценка</h3>
+        <p>Изучаем устройство или конфиг, считаем стоимость работ и комплектующих. Согласовываем смету.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">03 / Работа</div>
+        <h3>Фотоотчёт по этапам</h3>
+        <p>Чиним или собираем у себя в мастерской. Снимаем процесс — видно, что и как сделано.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">04 / Передача</div>
+        <h3>Тестирование и гарантия</h3>
+        <p>Стресс-тесты, температуры, стабильность. Отдаём с актом и гарантией на работы.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section data-od-id="numbers">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Гарантия и сроки</span>
+      <h2>Цифры, на которые можно опереться.</h2>
+    </div>
+    <div class="nums">
+      <div class="num-cell">
+        <div class="big">12<span class="unit">мес</span></div>
+        <div class="lab">Гарантия на любые работы по сборке и компонентному ремонту</div>
+      </div>
+      <div class="num-cell">
+        <div class="big">1–3<span class="unit">дн</span></div>
+        <div class="lab">Стандартный срок диагностики и большинства работ</div>
+      </div>
+      <div class="num-cell">
+        <div class="big">6<span class="unit">лет</span></div>
+        <div class="lab">Работаем с 2019 года — знаем своё дело досконально</div>
+      </div>
+      <div class="num-cell">
+        <div class="big">0<span class="unit">₽</span></div>
+        <div class="lab">Если диагностика показала, что ремонт невозможен — оплата не берётся</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" data-od-id="portfolio">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Реальные кейсы</span>
+      <h2>Сборки, ремонт и обслуживание — избранные работы.</h2>
+      <p>Каждая карточка ведёт на полный пост в Telegram-канале с фотографиями и описанием процесса.</p>
+    </div>
+    <div class="filters" id="pfFilters">
+      <button class="filter active" data-filter="all">Все работы</button>
+      <button class="filter" data-filter="build">Сборки</button>
+      <button class="filter" data-filter="repair">Ремонт</button>
+      <button class="filter" data-filter="tier">Готовые сборки</button>
+    </div>
+    <div class="pf-grid" id="pfGrid"></div>
+    <div class="show-more-wrap" id="pfShowMoreWrap" style="display:none">
+      <button class="show-more-btn" id="pfShowMore">Показать больше работ</button>
+    </div>
+    <div class="no-result" id="pfEmpty" style="display:none">Здесь пока пусто</div>
+  </div>
+</section>
+
+<!-- BUILDS — «Также мы можем собрать» -->
+<section data-od-id="builds">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Сборка ПК на заказ</span>
+      <h2>Также мы можем собрать</h2>
+      <p>Готовые конфигурации под любые задачи. Комплектующие подбираем индивидуально, собираем с тестированием и даём гарантию 12 месяцев.</p>
+    </div>
+    <div class="builds-grid">
+      <div class="build-card">
+        <div class="bc-icon"><i class="ph-bold ph-monitor"></i></div>
+        <h3>Офис</h3>
+        <p>Надёжный компьютер для офиса, учёбы и работы с документами. Тихий, компактный, с SSD.</p>
+        <div class="bc-price">от 10 000 ₽</div>
+      </div>
+      <div class="build-card">
+        <div class="bc-icon"><i class="ph-bold ph-game-controller"></i></div>
+        <h3>Игры</h3>
+        <p>Производительная сборка для современных игр в 1080p и 1440p. Стабильный FPS, низкие температуры.</p>
+        <div class="bc-price">от 40 000 ₽</div>
+      </div>
+      <div class="build-card">
+        <div class="bc-icon"><i class="ph-bold ph-hard-drives"></i></div>
+        <h3>Сервер</h3>
+        <p>Серверные решения для бизнеса и хранения данных. Надёжность 24/7, удалённое администрирование.</p>
+        <div class="bc-price">от 50 000 ₽</div>
+      </div>
+      <div class="build-card">
+        <div class="bc-icon"><i class="ph-bold ph-cpu"></i></div>
+        <h3>Профи</h3>
+        <p>Графика, 3D, видеомонтаж, CAD — мощная рабочая станция под профессиональный софт.</p>
+        <div class="bc-price">от 200 000 ₽</div>
+      </div>
+      <div class="build-card">
+        <div class="bc-icon"><i class="ph-bold ph-sparkle"></i></div>
+        <h3>Кастом</h3>
+        <p>Фулл-кастом, моддинг, кастомная подсветка, лазерная гравировка, винилография — уникальный внешний вид.</p>
+        <div class="bc-price">от 250 000 ₽</div>
+      </div>
+      <div class="build-card">
+        <div class="bc-icon"><i class="ph-bold ph-package"></i></div>
+        <h3>Сборка с доставкой</h3>
+        <p>Соберём, протестируем и отправим СДЭКом по России. Упаковка с пломбами, страховка включена.</p>
+        <div class="bc-price">от 40 000 ₽</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" data-od-id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Отзывы</span>
+      <h2>То, что про нас пишут клиенты.</h2>
+      <p>Нажмите на карточку чтобы открыть оригинальный отзыв в Telegram-канале.</p>
+    </div>
+    <div class="rv-grid" id="rvGrid"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" data-od-id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Частые вопросы — короткие ответы.</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Работаете только в Краснодаре или отправляете по России?</summary>
+        <div class="faq-body">Мастерская в Краснодаре. Готовые сборки, видеокарты и комплектующие отправляем СДЭКом по России — упаковка с пломбами, бесплатная страховка приобретённого товара.</div>
+      </details>
+      <details>
+        <summary>Сколько стоит сборка ПК из моих комплектующих?</summary>
+        <div class="faq-body">7% от стоимости комплектующих — включает сборку, прокладку проводов, стресс-тесты, установку ОС с драйверами и базовый набор софта. Если комплектующие подбираем мы — отдельная услуга 500 ₽.</div>
+      </details>
+      <details>
+        <summary>Дадите гарантию на ремонт?</summary>
+        <div class="faq-body">До 12 месяцев на работы по сборке и компонентному ремонту, до 6 месяцев — на обслуживание (чистка + термоинтерфейс). Если в течение этого срока возникает та же проблема — бесплатно повторяем работы.</div>
+      </details>
+      <details>
+        <summary>Что делаете с устройствами, которые «нельзя починить»?</summary>
+        <div class="faq-body">Делаем компонентный ремонт: пайка BGA, замена контроллеров питания, восстановление дорожек, прошивка повреждённого BIOS, замена сокетов.</div>
+      </details>
+      <details>
+        <summary>Сколько занимает ремонт?</summary>
+        <div class="faq-body">Чистка и термопаста — в день обращения. Компонентный ремонт — 1–3 дня. Сложные кейсы (поиск редких деталей) — обсуждаем заранее, перед началом работ.</div>
+      </details>
+      <details>
+        <summary>Если после диагностики ремонт невозможен — нужно платить?</summary>
+        <div class="faq-body">Нет. Если мы взялись за устройство и поняли, что вернуть к жизни нельзя — вы ничего не должны.</div>
+      </details>
+      <details>
+        <summary>Где посмотреть ваши работы и связаться?</summary>
+        <div class="faq-body">Канал — <a href="https://t.me/pulse_computers" target="_blank" rel="noopener" style="color:var(--accent-soft)">@pulse_computers</a>. Заявки и заказы — бот <a href="https://t.me/PulseComputersBot" target="_blank" rel="noopener" style="color:var(--accent-soft)">@PulseComputersBot</a>. Написать менеджеру лично — <a href="https://t.me/pulse_gadgets1" target="_blank" rel="noopener" style="color:var(--accent-soft)">@pulse_gadgets1</a>.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" data-od-id="contacts">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Контакты</span>
+      <h2>Связаться — проще всего в Telegram.</h2>
+    </div>
+    <div class="contacts-grid">
+      <div class="contacts-list">
+        <a class="ct" href="https://t.me/PulseComputersBot" target="_blank" rel="noopener">
+          <span class="ct-ico"><i class="ph-bold ph-robot"></i></span>
+          <div>
+            <div class="ct-lab">Бот для заявок</div>
+            <div class="ct-val">@PulseComputersBot</div>
+          </div>
+        </a>
+        <a class="ct" href="https://t.me/pulse_gadgets1" target="_blank" rel="noopener">
+          <span class="ct-ico"><i class="ph-bold ph-chat-circle-dots"></i></span>
+          <div>
+            <div class="ct-lab">Менеджер</div>
+            <div class="ct-val">@pulse_gadgets1</div>
+          </div>
+        </a>
+        <a class="ct" href="https://t.me/pulse_computers" target="_blank" rel="noopener">
+          <span class="ct-ico"><i class="ph-bold ph-telegram-logo"></i></span>
+          <div>
+            <div class="ct-lab">Канал с работами</div>
+            <div class="ct-val">@pulse_computers</div>
+          </div>
+        </a>
+        <div class="ct">
+          <span class="ct-ico"><i class="ph-bold ph-map-pin"></i></span>
+          <div>
+            <div class="ct-lab">Город</div>
+            <div class="ct-val">Краснодар</div>
+          </div>
+        </div>
+        <div class="ct">
+          <span class="ct-ico"><i class="ph-bold ph-clock-counter-clockwise"></i></span>
+          <div>
+            <div class="ct-lab">Приём заявок</div>
+            <div class="ct-val">Круглосуточно через Telegram</div>
+          </div>
+        </div>
+      </div>
+      <div class="map-stub" aria-hidden="true">
+        <div class="map-pin">
+          <span class="lab">Краснодар</span>
+          <span class="dot"></span>
+        </div>
+        <div class="map-note">Работаем в Краснодаре, доставка сборок — по всей России</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section data-od-id="cta">
+  <div class="wrap">
+    <div class="cta-block">
+      <span class="eyebrow">Готовы начать</span>
+      <h2 style="margin-top:20px">Опишите задачу — соберём, починим или подберём.</h2>
+      <p>Бесплатная консультация в Telegram. Отвечаем в течение часа в рабочее время.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="https://t.me/PulseComputersBot" target="_blank" rel="noopener">
+          <i class="ph-bold ph-telegram-logo"></i><span>Написать в бот</span>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="https://t.me/pulse_computers" target="_blank" rel="noopener">
+          <i class="ph-bold ph-arrow-up-right"></i><span>Посмотреть канал</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-col">
+      <div class="brand">
+        <img src="mpx20tjx-image.png" alt="Pulse Computers" width="24" height="24" onerror="this.style.display='none'" style="border-radius:6px">
+        <span>Pulse Computers · Краснодар</span>
+      </div>
+      <div class="footer-ip">ИП <!-- ИП_ФИО -->, ИНН <!-- ИНН --></div>
+    </div>
+    <div class="footer-legal">
+      <a href="#" target="_blank" rel="noopener">Публичная оферта</a>
+      <a href="#" target="_blank" rel="noopener">Пользовательское соглашение</a>
+    </div>
+    <div class="footer-links">
+      <a href="https://t.me/pulse_computers" target="_blank" rel="noopener">Канал</a>
+      <a href="https://t.me/PulseComputersBot" target="_blank" rel="noopener">Бот</a>
+      <a href="https://t.me/pulse_gadgets1" target="_blank" rel="noopener">Менеджер</a>
+      <a href="#services">Услуги</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="footer-meta">© 2019–2026 Pulse Computers</div>
+  </div>
+</footer>
+
+<script>
+// ============================================================
+//  НАСТРОЙКИ (меняй здесь — остальное подхватится)
+// ============================================================
+const CFG = {
+  IP_FIO:   "",   // ИП Фамилия Имя Отчество
+  IP_INN:   "",   // ИНН
+  BOT:      "PulseComputersBot",
+  MANAGER:  "pulse_gadgets1",
+  CHANNEL:  "pulse_computers",
+  YEAR:     2019,
+  CITY:     "Краснодар",
+};
+const BOT_URL    = "https://t.me/" + CFG.BOT;
+const MGR_URL    = "https://t.me/" + CFG.MANAGER;
+const CH_URL     = "https://t.me/" + CFG.CHANNEL;
+
+const SUPA_BASE = "https://qsvztyhszwauwkxfmirs.supabase.co/storage/v1/object/public/portfolio/";
+const SUPA      = SUPA_BASE;
+
+// ============================================================
+//  ДАННЫЕ
+// ============================================================
+
+// Все работы (165) — c=категория, t=заголовок, f=файл, u=ссылка на пост
+const ALL_WORKS = [{"c":"build","t":"Игровая сборка Lian Li V100 Mini","f":"channel/pulse_computers_1539_0.jpg","u":"https://t.me/pulse_computers/1539"},{"c":"repair","t":"Восстановление BIOS после неудачной прошивки","f":"channel/pulse_computers_1505_0.jpg","u":"https://t.me/pulse_computers/1505"},{"c":"repair","t":"Комплексное восстановление ASUS","f":"channel/pulse_computers_1495_0.jpg","u":"https://t.me/pulse_computers/1495"},{"c":"repair","t":"Восстановление матплаты LGA 1366","f":"channel/pulse_computers_1491_0.jpg","u":"https://t.me/pulse_computers/1491"},{"c":"repair","t":"Обслуживание и настройка игрового ПК","f":"channel/pulse_computers_1478_0.jpg","u":"https://t.me/pulse_computers/1478"},{"c":"repair","t":"Обслуживание MacBook Pro 2015","f":"channel/pulse_computers_1465_0.jpg","u":"https://t.me/pulse_computers/1465"},{"c":"build","t":"Белоснежная игровая сборка Ryzen 5","f":"channel/pulse_computers_1463_0.jpg","u":"https://t.me/pulse_computers/1463"},{"c":"repair","t":"Обслуживание ASUS TUF Gaming 15","f":"channel/pulse_computers_1456_0.jpg","u":"https://t.me/pulse_computers/1456"},{"c":"repair","t":"Обслуживание ASUS VivoBook S 15","f":"channel/pulse_computers_1444_0.jpg","u":"https://t.me/pulse_computers/1444"},{"c":"build","t":"Игровая сборка Ryzen 5 7500F + RTX 4060","f":"channel/pulse_computers_1439_0.jpg","u":"https://t.me/pulse_computers/1439"},{"c":"repair","t":"Обслуживание Ardor Gaming G17","f":"channel/pulse_computers_1431_0.jpg","u":"https://t.me/pulse_computers/1431"},{"c":"repair","t":"Обслуживание MSI GF63 Thin","f":"channel/pulse_computers_1422_0.jpg","u":"https://t.me/pulse_computers/1422"},{"c":"build","t":"Компактная сборка i5-14400F + RTX 4060","f":"channel/pulse_computers_1415_0.jpg","u":"https://t.me/pulse_computers/1415"},{"c":"build","t":"Pulse Argentum: Ryzen 7 + RTX 5070","f":"channel/pulse_computers_1398_0.jpg","u":"https://t.me/pulse_computers/1398"},{"c":"repair","t":"Восстановление ПК после повреждения сокета","f":"channel/pulse_computers_1348_0.jpg","u":"https://t.me/pulse_computers/1348"},{"c":"repair","t":"Восстановление настроек Navicam","f":"channel/pulse_computers_1344_0.jpg","u":"https://t.me/pulse_computers/1344"},{"c":"repair","t":"Восстановление ПК на базе i3-2100","f":"channel/pulse_computers_1336_0.jpg","u":"https://t.me/pulse_computers/1336"},{"c":"repair","t":"Комплексное обслуживание игрового ПК","f":"channel/pulse_computers_1316_0.jpg","u":"https://t.me/pulse_computers/1316"},{"c":"upgrade","t":"Апгрейд игрового ПК: Ryzen 7 7700","f":"channel/pulse_computers_1306_0.jpg","u":"https://t.me/pulse_computers/1306"},{"c":"repair","t":"Обслуживание MacBook Pro 16","f":"channel/pulse_computers_1293_0.jpg","u":"https://t.me/pulse_computers/1293"},{"c":"build","t":"Сборка Ryzen 7 7800X3D","f":"channel/pulse_computers_1289_0.jpg","u":"https://t.me/pulse_computers/1289"},{"c":"build","t":"Игровые станции SHIFTED REALITY","f":"channel/pulse_computers_1288_0.jpg","u":"https://t.me/pulse_computers/1288"},{"c":"build","t":"Игровая сборка Ryzen 5 7500F + RTX 4060 Ti","f":"channel/pulse_computers_1282_0.jpg","u":"https://t.me/pulse_computers/1282"},{"c":"upgrade","t":"Апгрейд: переход на актуальную платформу","f":"channel/pulse_computers_1274_0.jpg","u":"https://t.me/pulse_computers/1274"},{"c":"build","t":"Игровой ПК i5-12400F + RTX 4060","f":"channel/pulse_computers_1264_0.jpg","u":"https://t.me/pulse_computers/1264"},{"c":"repair","t":"Восстановление Logitech G Pro после залития","f":"channel/pulse_computers_1255_0.jpg","u":"https://t.me/pulse_computers/1255"},{"c":"repair","t":"Восстановление MSI после залития","f":"channel/pulse_computers_1245_0.jpg","u":"https://t.me/pulse_computers/1245"},{"c":"repair","t":"Комплексное обслуживание игрового ПК","f":"channel/pulse_computers_1233_0.jpg","u":"https://t.me/pulse_computers/1233"},{"c":"build","t":"Белая сборка Ryzen 5 7500F","f":"channel/pulse_computers_1226_0.jpg","u":"https://t.me/pulse_computers/1226"},{"c":"repair","t":"Обслуживание СО Honor 14","f":"channel/pulse_computers_1209_0.jpg","u":"https://t.me/pulse_computers/1209"},{"c":"build","t":"Игровая станция Geometric Future","f":"channel/pulse_computers_1207_0.jpg","u":"https://t.me/pulse_computers/1207"},{"c":"repair","t":"Комплексное обслуживание HP Pavilion","f":"channel/pulse_computers_1203_0.jpg","u":"https://t.me/pulse_computers/1203"},{"c":"build","t":"Игровая сборка RTX 4060","f":"channel/pulse_computers_1201_0.jpg","u":"https://t.me/pulse_computers/1201"},{"c":"repair","t":"Обслуживание GIGABYTE 3070 Eagle","f":"channel/pulse_computers_1192_0.jpg","u":"https://t.me/pulse_computers/1192"},{"c":"repair","t":"Ремонт HP Pavilion: АКБ и апгрейд","f":"channel/pulse_computers_1183_0.jpg","u":"https://t.me/pulse_computers/1183"},{"c":"build","t":"Сборка ПК для отправки в Аткарск","f":"channel/pulse_computers_1179_0.jpg","u":"https://t.me/pulse_computers/1179"},{"c":"repair","t":"Восстановление USB-порта Dell Latitude","f":"channel/pulse_computers_1173_0.jpg","u":"https://t.me/pulse_computers/1173"},{"c":"repair","t":"Настройка HONOR GDG-X","f":"channel/pulse_computers_1172_0.jpg","u":"https://t.me/pulse_computers/1172"},{"c":"upgrade","t":"Апгрейд рабочей станции DeepCool CH690","f":"channel/pulse_computers_1163_0.jpg","u":"https://t.me/pulse_computers/1163"},{"c":"repair","t":"Восстановление игрового ПК","f":"channel/pulse_computers_1148_0.jpg","u":"https://t.me/pulse_computers/1148"},{"c":"repair","t":"Восстановление звука Logitech Pro X","f":"channel/pulse_computers_1143_0.jpg","u":"https://t.me/pulse_computers/1143"},{"c":"repair","t":"Устранение перегрева и отключений","f":"channel/pulse_computers_1139_0.jpg","u":"https://t.me/pulse_computers/1139"},{"c":"repair","t":"Устранение зависаний игрового ПК","f":"channel/pulse_computers_1133_0.jpg","u":"https://t.me/pulse_computers/1133"},{"c":"upgrade","t":"Апгрейд и обслуживание игрового ПК","f":"channel/pulse_computers_1107_0.jpg","u":"https://t.me/pulse_computers/1107"},{"c":"repair","t":"Восстановление корпуса Acer Aspire 3","f":"channel/pulse_computers_1097_0.jpg","u":"https://t.me/pulse_computers/1097"},{"c":"build","t":"Игровая сборка DeepCool CG380","f":"channel/pulse_computers_1095_0.jpg","u":"https://t.me/pulse_computers/1095"},{"c":"repair","t":"Восстановление ПК после загрязнений","f":"channel/pulse_computers_1083_0.jpg","u":"https://t.me/pulse_computers/1083"},{"c":"repair","t":"Xiaomi Redmi Book Pro 16","f":"channel/pulse_computers_1072_0.jpg","u":"https://t.me/pulse_computers/1072"},{"c":"repair","t":"Комплексное восстановление Acer","f":"channel/pulse_computers_1061_0.jpg","u":"https://t.me/pulse_computers/1061"},{"c":"build","t":"Игровая сборка i5-12400F + RTX 4060","f":"channel/pulse_computers_1060_0.jpg","u":"https://t.me/pulse_computers/1060"},{"c":"repair","t":"Ремонт разъёма питания HKC","f":"channel/pulse_computers_1053_0.jpg","u":"https://t.me/pulse_computers/1053"},{"c":"repair","t":"Комплексное восстановление Samsung","f":"channel/pulse_computers_1044_0.jpg","u":"https://t.me/pulse_computers/1044"},{"c":"build","t":"Апгрейд и сборка i5-12400F","f":"channel/pulse_computers_1037_0.jpg","u":"https://t.me/pulse_computers/1037"},{"c":"repair","t":"Профилактика ноутбука Samsung","f":"channel/pulse_computers_1030_0.jpg","u":"https://t.me/pulse_computers/1030"},{"c":"repair","t":"Обслуживание игрового ПК","f":"channel/pulse_computers_1020_0.jpg","u":"https://t.me/pulse_computers/1020"},{"c":"repair","t":"Обслуживание игрового ПК","f":"channel/pulse_computers_1012_0.jpg","u":"https://t.me/pulse_computers/1012"},{"c":"repair","t":"Ремонт разъёма питания HKC","f":"channel/pulse_computers_1002_0.jpg","u":"https://t.me/pulse_computers/1002"},{"c":"build","t":"Pulse Argentum: мощность и стиль","f":"channel/pulse_computers_998_0.jpg","u":"https://t.me/pulse_computers/998"},{"c":"repair","t":"Восстановление после переохлаждения","f":"channel/pulse_computers_989_0.jpg","u":"https://t.me/pulse_computers/989"},{"c":"upgrade","t":"Оптимизация Ryzen 5 + RTX 2060 Super","f":"channel/pulse_computers_984_0.jpg","u":"https://t.me/pulse_computers/984"},{"c":"repair","t":"Восстановление ПК на FX-4300","f":"channel/pulse_computers_979_0.jpg","u":"https://t.me/pulse_computers/979"},{"c":"repair","t":"Обслуживание MacBook Air M1","f":"channel/pulse_computers_974_0.jpg","u":"https://t.me/pulse_computers/974"},{"c":"upgrade","t":"Апгрейд i5-10400F + RTX 3050","f":"channel/pulse_computers_963_0.jpg","u":"https://t.me/pulse_computers/963"},{"c":"repair","t":"Комплексное восстановление ноутбука","f":"channel/pulse_computers_954_1.jpg","u":"https://t.me/pulse_computers/954"},{"c":"repair","t":"Обслуживание Ryzen 3 3300U","f":"channel/pulse_computers_947_0.jpg","u":"https://t.me/pulse_computers/947"},{"c":"upgrade","t":"Апгрейд Lenovo Ideapad 320","f":"channel/pulse_computers_936_0.jpg","u":"https://t.me/pulse_computers/936"},{"c":"repair","t":"Оптимизация MSI Cyborg 17","f":"channel/pulse_computers_926_0.jpg","u":"https://t.me/pulse_computers/926"},{"c":"repair","t":"Настройка китайского ноутбука","f":"channel/pulse_computers_925_0.jpg","u":"https://t.me/pulse_computers/925"},{"c":"repair","t":"Настройка офисного ПК DEXP","f":"channel/pulse_computers_922_0.jpg","u":"https://t.me/pulse_computers/922"},{"c":"repair","t":"Комплексное обслуживание ПК","f":"channel/pulse_computers_921_0.jpg","u":"https://t.me/pulse_computers/921"},{"c":"build","t":"Эстетичная белая сборка DeepCool","f":"channel/pulse_computers_920_0.jpg","u":"https://t.me/pulse_computers/920"},{"c":"repair","t":"Модернизация HyperX Origins 60","f":"channel/pulse_computers_913_0.jpg","u":"https://t.me/pulse_computers/913"},{"c":"repair","t":"Обслуживание ASUS ZenBook 14","f":"channel/pulse_computers_905_0.jpg","u":"https://t.me/pulse_computers/905"},{"c":"repair","t":"Восстановление ПК на Xeon","f":"channel/pulse_computers_887_0.jpg","u":"https://t.me/pulse_computers/887"},{"c":"repair","t":"Восстановление ПК на Xeon","f":"channel/pulse_computers_872_0.jpg","u":"https://t.me/pulse_computers/872"},{"c":"repair","t":"Восстановление ПК на Xeon","f":"channel/pulse_computers_867_0.jpg","u":"https://t.me/pulse_computers/867"},{"c":"repair","t":"Замена свитчей RedSquare Keyrox TKL","f":"channel/pulse_computers_851_0.jpg","u":"https://t.me/pulse_computers/851"},{"c":"upgrade","t":"Обслуживание и апгрейд ПК","f":"channel/pulse_computers_838_0.jpg","u":"https://t.me/pulse_computers/838"},{"c":"repair","t":"Обслуживание игрового ПК","f":"channel/pulse_computers_824_0.jpg","u":"https://t.me/pulse_computers/824"},{"c":"upgrade","t":"Апгрейд и обслуживание HP","f":"channel/pulse_computers_815_0.jpg","u":"https://t.me/pulse_computers/815"},{"c":"build","t":"Бюджетный игровой ПК i3-13100F + RTX 2060","f":"channel/pulse_computers_813_0.jpg","u":"https://t.me/pulse_computers/813"},{"c":"build","t":"Игровой ПК Ryzen 5 7500F + RTX 4070 Super","f":"channel/pulse_computers_811_0.jpg","u":"https://t.me/pulse_computers/811"},{"c":"repair","t":"Обслуживание Packard Bell","f":"channel/pulse_computers_797_0.jpg","u":"https://t.me/pulse_computers/797"},{"c":"repair","t":"Восстановление петель Chuwi","f":"channel/pulse_computers_787_0.jpg","u":"https://t.me/pulse_computers/787"},{"c":"repair","t":"Восстановление игрового ПК на Xeon","f":"channel/pulse_computers_777_0.jpg","u":"https://t.me/pulse_computers/777"},{"c":"repair","t":"Обслуживание GTX 760","f":"channel/pulse_computers_768_0.jpg","u":"https://t.me/pulse_computers/768"},{"c":"upgrade","t":"Комплексный апгрейд ПК","f":"channel/pulse_computers_760_0.jpg","u":"https://t.me/pulse_computers/760"},{"c":"repair","t":"Обслуживание игровых ПК Cyber Point","f":"channel/pulse_computers_750_0.jpg","u":"https://t.me/pulse_computers/750"},{"c":"upgrade","t":"Обслуживание ASUS X553M","f":"channel/pulse_computers_744_0.jpg","u":"https://t.me/pulse_computers/744"},{"c":"build","t":"Игровой ПК i5-12400F + RTX 5050","f":"channel/pulse_computers_743_0.jpg","u":"https://t.me/pulse_computers/743"},{"c":"repair","t":"Восстановление Corsair Harpoon","f":"channel/pulse_computers_733_0.jpg","u":"https://t.me/pulse_computers/733"},{"c":"repair","t":"Настройка ПО HP ультрабук","f":"channel/pulse_computers_728_0.jpg","u":"https://t.me/pulse_computers/728"},{"c":"build","t":"Апгрейд MSI Thin A15","f":"channel/pulse_computers_721_0.jpg","u":"https://t.me/pulse_computers/721"},{"c":"upgrade","t":"Апгрейд памяти MSI Thin A15","f":"channel/pulse_computers_712_0.jpg","u":"https://t.me/pulse_computers/712"},{"c":"upgrade","t":"Апгрейд рабочей станции DeepCool CH690","f":"channel/pulse_computers_710_0.jpg","u":"https://t.me/pulse_computers/710"},{"c":"repair","t":"Комплексное обслуживание ПК","f":"channel/pulse_computers_701_0.jpg","u":"https://t.me/pulse_computers/701"},{"c":"repair","t":"Восстановление Wi-Fi ASUS Vivobook","f":"channel/pulse_computers_698_0.jpg","u":"https://t.me/pulse_computers/698"},{"c":"repair","t":"Обслуживание и ремонт PS4 Slim","f":"channel/pulse_computers_690_0.jpg","u":"https://t.me/pulse_computers/690"},{"c":"upgrade","t":"Апгрейд моноблока IRU","f":"channel/pulse_computers_687_0.jpg","u":"https://t.me/pulse_computers/687"},{"c":"repair","t":"Настройка ASUS TUF F17","f":"channel/pulse_computers_671_0.jpg","u":"https://t.me/pulse_computers/671"},{"c":"repair","t":"Замена матрицы ASUS TUF A15","f":"channel/pulse_computers_667_0.jpg","u":"https://t.me/pulse_computers/667"},{"c":"repair","t":"Настройка ПО MSI GF76 Thin","f":"channel/pulse_computers_662_0.jpg","u":"https://t.me/pulse_computers/662"},{"c":"repair","t":"Модернизация Logitech G Pro X","f":"channel/pulse_computers_658_0.jpg","u":"https://t.me/pulse_computers/658"},{"c":"repair","t":"Обслуживание игрового ПК","f":"channel/pulse_computers_646_0.jpg","u":"https://t.me/pulse_computers/646"},{"c":"repair","t":"Восстановление стабильности ПК","f":"channel/pulse_computers_641_0.jpg","u":"https://t.me/pulse_computers/641"},{"c":"upgrade","t":"Апгрейд и пересборка школьного ПК","f":"channel/pulse_computers_637_0.jpg","u":"https://t.me/pulse_computers/637"},{"c":"build","t":"Бюджетный ПК i3-12100F + RTX 3060Ti","f":"channel/pulse_computers_627_0.jpg","u":"https://t.me/pulse_computers/627"},{"c":"upgrade","t":"Апгрейд Lenovo Z546","f":"channel/pulse_computers_619_0.jpg","u":"https://t.me/pulse_computers/619"},{"c":"repair","t":"Восстановление ретро-ПК","f":"channel/pulse_computers_615_0.jpg","u":"https://t.me/pulse_computers/615"},{"c":"repair","t":"Настройка ASUS VivoBook GO","f":"channel/pulse_computers_601_0.jpg","u":"https://t.me/pulse_computers/601"},{"c":"build","t":"Сборка i5-14400F + RTX 3060","f":"channel/pulse_computers_590_0.jpg","u":"https://t.me/pulse_computers/590"},{"c":"repair","t":"Восстановление сборки Xeon X99","f":"channel/pulse_computers_583_0.jpg","u":"https://t.me/pulse_computers/583"},{"c":"repair","t":"Обслуживание Honor MagicBook X14","f":"channel/pulse_computers_579_0.jpg","u":"https://t.me/pulse_computers/579"},{"c":"repair","t":"Обслуживание HP Pavilion 15","f":"channel/pulse_computers_571_0.jpg","u":"https://t.me/pulse_computers/571"},{"c":"repair","t":"Восстановление охлаждения ПК","f":"channel/pulse_computers_552_0.jpg","u":"https://t.me/pulse_computers/552"},{"c":"upgrade","t":"Апгрейд Dell: переход на SSD","f":"channel/pulse_computers_545_0.jpg","u":"https://t.me/pulse_computers/545"},{"c":"repair","t":"Обслуживание ASUS ROG Strix G15","f":"channel/pulse_computers_536_0.jpg","u":"https://t.me/pulse_computers/536"},{"c":"repair","t":"Настройка HP Pavilion 15","f":"channel/pulse_computers_520_0.jpg","u":"https://t.me/pulse_computers/520"},{"c":"repair","t":"Восстановление ПК","f":"channel/pulse_computers_518_0.jpg","u":"https://t.me/pulse_computers/518"},{"c":"repair","t":"Замена дисплея Digma","f":"channel/pulse_computers_498_0.jpg","u":"https://t.me/pulse_computers/498"},{"c":"repair","t":"Комплексное восстановление ASUS X554L","f":"channel/pulse_computers_488_0.jpg","u":"https://t.me/pulse_computers/488"},{"c":"build","t":"Настройка игровых систем","f":"channel/pulse_computers_476_0.jpg","u":"https://t.me/pulse_computers/476"}];
+
+const CAT_LABEL = {build:"Сборка",repair:"Ремонт",upgrade:"Апгрейд",custom:"Кастом"};
+
+// ============================================================
+//  УТИЛИТЫ
+// ============================================================
+function shuffled(arr){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+
+// ============================================================
+//  MARQUEE ROWS — 120 уникальных изображений, contain, edge-to-edge
+// ============================================================
+(function initMarqueeRows(){
+  const POOL = ALL_WORKS.slice(0, 120);
+  const rows = [
+    {el: document.getElementById("lrow1"), count: 24, w:180, h:120},
+    {el: document.getElementById("lrow2"), count: 24, w:150, h:100},
+    {el: document.getElementById("lrow3"), count: 24, w:200, h:130},
+    {el: document.getElementById("lrow4"), count: 24, w:140, h:94 },
+    {el: document.getElementById("lrow5"), count: 24, w:220, h:140},
+  ];
+  rows.forEach(function(r){
+    if(!r.el) return;
+    const picks = shuffled(POOL).slice(0, r.count);
+    const set = [...picks, ...picks]; // duplicate for seamless loop
+    r.el.innerHTML = set.map(function(it){
+      return '<a class="cell" href="'+it.u+'" target="_blank" rel="noopener" title="'+it.t.replace(/"/g,"&quot;")+'"><img loading="lazy" decoding="async" width="'+r.w+'" height="'+r.h+'" src="'+SUPA_BASE+it.f+'" alt=""></a>';
+    }).join("");
+  });
+})();
+
+// ============================================================
+//  SERVICES
+// ============================================================
+const SERVICES = [
+  ["Сборка ПК из ваших комплектующих","Профессиональная сборка с тестированием и настройкой","7% от стоимости"],
+  ["Подбор комплектующих","Индивидуальный подбор компонентов под задачи и бюджет","500 ₽"],
+  ["Чистка и обслуживание ноутбуков","Полная разборка, чистка от пыли, замена термопасты","от 1 500 ₽"],
+  ["Чистка и обслуживание ПК","Чистка системного блока, замена термоинтерфейса","от 1 000 ₽"],
+  ["Чистка видеокарт","Разборка, чистка радиатора, замена термопрокладок","от 1 000 ₽"],
+  ["Установка ОС под ключ","Windows с драйверами и базовым софтом","2 000 ₽"],
+  ["Установка приложений и софта","Установка и настройка пользовательского ПО","от 200 ₽"],
+  ["Апгрейд компьютера","Увеличение памяти, замена комплектующих","от 500 ₽"],
+  ["Апгрейд ноутбука","RAM, SSD, модернизация системы охлаждения","от 500 ₽"],
+  ["Ремонт клавиатур и мышей","Диагностика и ремонт периферии","от 500 ₽"],
+  ["Ремонт после залития","Восстановление после попадания жидкости","от 2 000 ₽"],
+  ["Компонентный ремонт","Пайка BGA, замена чипов, ремонт цепей питания","от 3 000 ₽"],
+  ["Лазерная гравировка","Нанесение изображений лазером на корпуса","от 500 ₽"],
+  ["Винилография","Оклейка виниловой плёнкой с дизайном","от 2 000 ₽"],
+];
+
+// Лимиты символов для красной плашки (уменьшенные):
+// ≤8   → sz-xl (18px)   пример: "500 ₽", "2 000 ₽"
+// 9–11 → sz-l  (16px)   пример: "от 1 500 ₽"
+// 12–15→ sz-m  (14px)   пример: "от 3 000 ₽", "7% от стоим."
+// 16+  → sz-s  (12px)   запасной
+function priceSizeClass(txt){
+  var n = (txt||"").length;
+  if(n <= 8)  return "sz-xl";
+  if(n <= 11) return "sz-l";
+  if(n <= 15) return "sz-m";
+  return "sz-s";
+}
+
+var svcGrid = document.getElementById("svcGrid");
+SERVICES.forEach(function(s,i){
+  var n = String(i+1).padStart(2,"0");
+  var cls = priceSizeClass(s[2]);
+  svcGrid.insertAdjacentHTML("beforeend",
+    '<article class="svc"><div class="svc-top"><h3 class="svc-title">'+s[0]+'</h3><span class="svc-price '+cls+'">'+s[2]+'</span></div><p class="svc-desc">'+s[1]+'</p><div class="svc-foot"><span class="svc-num">'+n+' / 14</span><a href="'+BOT_URL+'" target="_blank" rel="noopener">Заказать <i class="ph-bold ph-arrow-up-right"></i></a></div></article>');
+});
+
+// ============================================================
+//  PORTFOLIO — 2 initially, «показать больше»
+// ============================================================
+const PORTFOLIO = [
+  {k:"build",img:"channel/pulse_computers_1539_0.jpg",t:"Игровая сборка Lian Li V100 Mini",d:"Ryzen 7 + RTX 5070 в компактном корпусе. Оптимизирована для 2K-гейминга.",u:"https://t.me/pulse_computers/1539",date:"29.05"},
+  {k:"build",img:"channel/pulse_computers_1463_0.jpg",t:"Белоснежная сборка на Ryzen 5",d:"Игровой ПК в стильном белом корпусе. DDR5, RTX 5060 Ti, RGB.",u:"https://t.me/pulse_computers/1463",date:"30.04"},
+  {k:"build",img:"channel/pulse_computers_1439_0.jpg",t:"Ryzen 5 7500F + RTX 4060",d:"Игровой ПК в DeepCool CG380. Стабильно высокий FPS.",u:"https://t.me/pulse_computers/1439",date:"23.04"},
+  {k:"build",img:"channel/pulse_computers_1415_0.jpg",t:"Компактная сборка i5-14400F",d:"Игровая система DeepCool CH260. Тихая, холодная, компактная.",u:"https://t.me/pulse_computers/1415",date:"20.04"},
+  {k:"build",img:"channel/pulse_computers_1398_0.jpg",t:"Pulse Argentum — авторская линейка",d:"Ryzen 7 8700F + RTX 5070 в фирменном исполнении.",u:"https://t.me/pulse_computers/1398",date:"15.04"},
+  {k:"repair",img:"channel/pulse_computers_1505_0.jpg",t:"Восстановление BIOS после прошивки",d:"Устранили циклическую перезагрузку после неудачного обновления BIOS.",u:"https://t.me/pulse_computers/1505",date:"16.05"},
+  {k:"repair",img:"channel/pulse_computers_1495_0.jpg",t:"Капитальный ремонт ASUS",d:"Клавиатура, динамики, АКБ, SSD, питание, чистка + апгрейд.",u:"https://t.me/pulse_computers/1495",date:"14.05"},
+  {k:"repair",img:"channel/pulse_computers_1491_0.jpg",t:"Восстановление матплаты LGA 1366",d:"Прошили BIOS на редкой материнской плате. Бонусом — чистка БП.",u:"https://t.me/pulse_computers/1491",date:"14.05"},
+  {k:"repair",img:"channel/pulse_computers_1478_0.jpg",t:"Обслуживание игрового ПК",d:"Чистка, ARGB-вентиляторы, новый термоинтерфейс, оптимизация BIOS.",u:"https://t.me/pulse_computers/1478",date:"08.05"},
+  {k:"repair",img:"channel/pulse_computers_1465_0.jpg",t:"Обслуживание MacBook Pro 2015",d:"Чистка СО и замена термоинтерфейса на Honeywell.",u:"https://t.me/pulse_computers/1465",date:"04.05"},
+  {k:"repair",img:"channel/pulse_computers_1456_0.jpg",t:"Обслуживание ASUS TUF Gaming 15",d:"Глубокая чистка + Honeywell PTM7950 — температуры −20°C.",u:"https://t.me/pulse_computers/1456",date:"30.04"},
+  {k:"repair",img:"channel/pulse_computers_1444_0.jpg",t:"Обслуживание ASUS VivoBook S 15",d:"Arctic MX-4 + жидкие термопрокладки Laird.",u:"https://t.me/pulse_computers/1444",date:"25.04"},
+  {k:"repair",img:"channel/pulse_computers_1431_0.jpg",t:"Обслуживание Ardor Gaming G17",d:"Honeywell PTM7950 + глубокая чистка — −14°C.",u:"https://t.me/pulse_computers/1431",date:"22.04"},
+  {k:"repair",img:"channel/pulse_computers_1422_0.jpg",t:"Обслуживание MSI GF63 Thin",d:"Honeywell + Laird, снижение температур на 10°C+.",u:"https://t.me/pulse_computers/1422",date:"21.04"},
+  {k:"repair",img:"channel/pulse_computers_1348_0.jpg",t:"Восстановление после сокета",d:"Устранили отсутствие изображения — замена материнки.",u:"https://t.me/pulse_computers/1348",date:"05.04"},
+];
+const BUILDS = [
+  {tier:"Офис",  d:"Надёжный компьютер для офиса и учёбы",            p:"от 10 000 ₽"},
+  {tier:"Игры",  d:"Производительная сборка для современных игр",     p:"от 40 000 ₽"},
+  {tier:"Сервер",d:"Серверные решения для бизнеса и хранения данных",p:"от 50 000 ₽"},
+  {tier:"Профи", d:"Графика, 3D, видеомонтаж — мощная рабочая станция",p:"от 200 000 ₽"},
+  {tier:"Кастом",d:"Фулл-кастом, моддинг, подсветка, гравировка",   p:"от 250 000 ₽"},
+];
+
+var pfGrid = document.getElementById("pfGrid");
+var pfEmpty = document.getElementById("pfEmpty");
+var pfShowMoreWrap = document.getElementById("pfShowMoreWrap");
+var pfShowMore = document.getElementById("pfShowMore");
+var INITIAL_SHOWN = 2;
+var currentFilter = "all";
+
+function renderPortfolio(filter, showAll){
+  pfGrid.innerHTML = "";
+  var items = [];
+  if(filter === "tier"){
+    items = BUILDS.map(function(b){ return {type:"tier",tier:b.tier, d:b.d, p:b.p}; });
+  } else {
+    items = PORTFOLIO.filter(function(p){ return filter==="all" || p.k===filter; }).map(function(p){ return {type:"work",k:p.k,img:p.img,t:p.t,d:p.d,u:p.u,date:p.date}; });
+  }
+
+  if(!items.length){ pfEmpty.style.display="block"; pfShowMoreWrap.style.display="none"; return; }
+  pfEmpty.style.display="none";
+
+  var visible = showAll ? items : items.slice(0, INITIAL_SHOWN);
+  var hidden = showAll ? [] : items.slice(INITIAL_SHOWN);
+
+  // Рендер видимых
+  visible.forEach(function(it){
+    pfGrid.insertAdjacentHTML("beforeend", cardHTML(it));
+  });
+
+  // Скрытые — рендерим с классом pf-hidden
+  if(hidden.length > 0){
+    hidden.forEach(function(it){
+      pfGrid.insertAdjacentHTML("beforeend", '<div class="pf-hidden">'+cardHTML(it)+'</div>');
+    });
+    pfShowMoreWrap.style.display = "block";
+    pfShowMore.textContent = "Показать больше работ (" + hidden.length + ")";
+  } else {
+    pfShowMoreWrap.style.display = "none";
+  }
+}
+
+function cardHTML(it){
+  if(it.type === "tier"){
+    return '<article class="pf build-card-card" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r3);padding:28px;display:flex;flex-direction:column;gap:12px"><div class="pf-cover" style="background:linear-gradient(135deg,var(--surface3),var(--surface4));aspect-ratio:4/3;border-radius:var(--r);display:grid;place-items:center;position:relative"><span class="pf-tag build">Готовая сборка</span><span style="font-family:var(--display);font-weight:700;font-size:clamp(36px,5vw,56px);color:var(--w95);letter-spacing:-0.03em">'+it.tier+'</span><span style="position:absolute;bottom:16px;right:16px;font-family:var(--mono);font-weight:700;color:var(--accent-soft);font-size:13px;padding:6px 10px;border-radius:8px;background:var(--accent-glow);border:1px solid var(--accent-border)">'+it.p+'</span></div><div><h3 style="font-family:var(--display);font-size:17px;color:var(--w95);font-weight:600;letter-spacing:-0.015em">Сборка «'+it.tier+'»</h3><p style="color:var(--w60);font-size:13.5px;line-height:1.5;margin-top:8px">'+it.d+'</p><div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--w40);letter-spacing:0.08em"><span>'+it.p.toUpperCase()+'</span><a href="'+BOT_URL+'" target="_blank" rel="noopener" style="color:var(--w60)">Заказать <i class="ph-bold ph-arrow-up-right"></i></a></div></div></article>';
+  }
+  var label = it.k==="build"?"Сборка":"Ремонт";
+  return '<article class="pf"><div class="pf-cover"><span class="pf-tag'+(it.k==="build"?" build":"")+'">'+label+'</span><img loading="lazy" src="'+SUPA+it.img+'" alt="'+it.t.replace(/"/g,"&quot;")+'"></div><div class="pf-body"><h3>'+it.t+'</h3><p>'+it.d+'</p><div class="pf-meta"><span>'+it.date+'.2026</span><a href="'+it.u+'" target="_blank" rel="noopener">В Telegram <i class="ph-bold ph-arrow-up-right"></i></a></div></div></article>';
+}
+
+// Клик «Показать больше» — раскрывает скрытые и прячет кнопку
+pfShowMore.addEventListener("click", function(){
+  var hidden = pfGrid.querySelectorAll(".pf-hidden");
+  hidden.forEach(function(el){ el.classList.remove("pf-hidden"); });
+  pfShowMoreWrap.style.display = "none";
+});
+
+// Фильтры
+document.getElementById("pfFilters").addEventListener("click", function(e){
+  var btn = e.target.closest(".filter");
+  if(!btn) return;
+  document.querySelectorAll(".filter").forEach(function(f){ f.classList.remove("active"); });
+  btn.classList.add("active");
+  currentFilter = btn.dataset.filter;
+  renderPortfolio(currentFilter, false);
+});
+
+renderPortfolio("all", false);
+
+// ============================================================
+//  REVIEWS — без «Стример», без «Пруф», вся карточка = ссылка
+// ============================================================
+var REVIEWS = [
+  {name:"Юлия",    city:"Краснодар", t:"Сборка на Ryzen 5 7500F + RTX 5060 Ti — всё пришло живым и в идеальном виде. Ребята собрали быстро, расписали что и зачем стоит. Работает тихо, температуры огонь.", u:"https://t.me/pulse_computers/1471"},
+  {name:"Никита",  city:"Краснодар", t:"Брал сборку i5-14400F + RTX 4060. Спасибо за честный подход — предложили оптимальный конфиг под бюджет, не уговаривали на лишнее. Отдельно за гравировку респект.", u:"https://t.me/pulse_computers/1464"},
+  {name:"Богдан",  city:"Москва",    t:"Сборка i5-12400F + RTX 4060 доехала до Москвы целой. Помогли с выбором комплектующих, всё внутри уложено как в каталоге. Стресс-тесты прошли, играю на ультре в 1440p.", u:"https://t.me/pulse_computers/1304"},
+  {name:"Тимофей", city:"Краснодар", t:"Обратился по ремонту — починили то, что в двух других местах назвали «нерентабельным». Цены адекватные, всё показали на фото, объяснили как обращаться с устройством дальше.", u:"https://t.me/pulse_computers/1171"},
+  {name:"Сахалин", city:"Южно-Сахалинск", t:"Заказывал MSI RTX 4060 Ti с доставкой через СДЭК. 8 дней до Южно-Сахалинска, упаковка толще брони у танка, всё опломбировано, бесплатная страховка в комплекте.", u:"https://t.me/pulse_computers/195"},
+];
+
+var rvGrid = document.getElementById("rvGrid");
+REVIEWS.forEach(function(r){
+  var initial = r.name.charAt(0);
+  rvGrid.insertAdjacentHTML("beforeend",
+    '<a class="rv-wrap-link" href="'+r.u+'" target="_blank" rel="noopener"><article class="rv"><span class="rv-quote-mark">“</span><p class="rv-text">'+r.t+'</p><div class="rv-foot"><span class="rv-avatar">'+initial+'</span><div><div class="rv-name">'+r.name+'</div><div class="rv-where">'+r.city+'</div></div></div></article></a>');
+});
+</script>
+
+</body>
+</html>
