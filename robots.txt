@@ -1,0 +1,17 @@
+# ============================================================
+#  Pulse Computers вЂ” robots.txt
+#  Р—РђРњР•РќР pulse.denchy.cyou РЅР° СЃРІРѕР№ РґРѕРјРµРЅ РІ СЃС‚СЂРѕРєРµ Sitemap Рё Host
+# ============================================================
+User-agent: *
+Allow: /
+Disallow: /assets/portfolio/  # РЅРµ РёРЅРґРµРєСЃРёСЂРѕРІР°С‚СЊ СЃС‹СЂС‹Рµ РєР°СЂС‚РёРЅРєРё (РѕРЅРё РІ sitemap-image)
+Sitemap: https://pulse.denchy.cyou/sitemap.xml
+
+# Yandex-specific directives
+User-agent: Yandex
+Host: pulse.denchy.cyou
+Crawl-delay: 2
+
+# Google-specific
+User-agent: Googlebot
+Crawl-delay: 0

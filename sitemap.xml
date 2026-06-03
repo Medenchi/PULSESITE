@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================
+  Pulse Computers вЂ” sitemap.xml
+  Р—РђРњР•РќР pulse.denchy.cyou РЅР° СЃРІРѕР№ РґРѕРјРµРЅ РІРѕ РІСЃРµС… <loc>
+============================================================ -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р° -->
+  <url>
+    <loc>https://pulse.denchy.cyou/</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://pulse.denchy.cyou/"/>
+  </url>
+
+  <!-- РЎРµРєС†РёРё (СЏРєРѕСЂСЏ) РєР°Рє РѕС‚РґРµР»СЊРЅС‹Рµ URL РґР»СЏ РёРЅРґРµРєСЃР°С†РёРё СЃРЅРёРїРїРµС‚РѕРІ -->
+  <url>
+    <loc>https://pulse.denchy.cyou/#services</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pulse.denchy.cyou/#portfolio</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pulse.denchy.cyou/#reviews</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pulse.denchy.cyou/#faq</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pulse.denchy.cyou/#contacts</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://pulse.denchy.cyou/#process</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
